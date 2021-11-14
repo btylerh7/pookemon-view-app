@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;500;700&display=swap');
+
+:root {
+  --main-bg: #333;
+  --card-bg: #f2f2f2;
+  --light-text: #ffffff;
+  --dark-text: #333;
+  --main-blue: #0092db;
+  --max-width: 800px;
+}
+*,*::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mohave';
+  box-sizing: border-box;
+}
+
+body {
+background-color: var(--main-bg);
+}
+
+/* Creating the main card */
+
+.poke-card { 
+  display: grid;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 2rem auto 0;
+  background: var(--card-bg);
+  box-shadow: 2px 2px 20px orange;
+  border-radius: 1rem;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+}
+
+.main-card {
+  display: grid;
+  justify-items: center;
+}
+
+.button {
+  align-self: center;
+  
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--main-blue);
+  color: var(--light-text);
+  border: 1px inset var(--main-blue);
+  border-radius: 1rem;
+}
+
+#sprite {
+  width: 15rem;
+}

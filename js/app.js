@@ -36,3 +36,13 @@ if ("serviceWorker" in navigator) {
     render();
   }
   render();
+
+  document.getElementById('pokemon-number')
+    .addEventListener("keyup", event => {
+        if (event.code === 'Enter')
+        {
+            event.preventDefault(); 
+            id = document.getElementById('pokemon-number').value;
+            console.log(id);
+        }
+    });
